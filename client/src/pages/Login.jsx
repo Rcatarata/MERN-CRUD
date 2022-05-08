@@ -22,7 +22,7 @@ function Login() {
 
   useEffect(() => {
       if(isError){
-          toast.error(message)
+          toast.error('Email or password maybe incorrect. Please try again.')
       }
       if(isSuccess || user) {
           navigate('/')
